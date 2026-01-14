@@ -1,0 +1,8 @@
+<svg width="600" height="600" viewBox="0 0 600 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="300" cy="300" r="280" fill="#D8F3DC" fill-opacity="0.5"/>
+<path d="M300 150C300 150 400 250 400 350C400 405.228 355.228 450 300 450C244.772 450 200 405.228 200 350C200 250 300 150 300 150Z" fill="#1A4D2E"/>
+<path d="M300 150L300 450" stroke="#95D5B2" stroke-width="2"/>
+<circle cx="260" cy="380" r="40" fill="#E9C46A"/>
+<circle cx="340" cy="380" r="40" fill="#E9C46A"/>
+<text x="50%" y="550" text-anchor="middle" font-family="sans-serif" font-size="24" fill="#1A4D2E">Fresh Organic Produce</text>
+</svg>

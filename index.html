@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organic Store | Fresh & Healthy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;800&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo-container">
+                <div class="logo-text">Organic <span>Store</span></div>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#shop">Everything</a></li>
+                <li><a href="#shop">Groceries</a></li>
+                <li><a href="#shop">Juices</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <div class="cart-btn-wrapper" style="position: relative; cursor: pointer;">
+                    <i data-lucide="shopping-bag"></i>
+                    <span class="cart-count">0</span>
+                </div>
+                <i data-lucide="user"></i>
+            </div>
+
+            <div class="mobile-toggle">
+                <i data-lucide="menu"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-subtitle">
+                    <i data-lucide="leaf" style="width: 20px; color: var(--color-primary)"></i>
+                    Best Quality Products
+                </div>
+                <h1 class="hero-title">Join The Organic Movement!</h1>
+                <p class="hero-desc">Discover top-quality products and join the organic movement for a healthier,
+                    sustainable lifestyle today!</p>
+                <button class="btn btn-primary" onclick="scrollToShop()"><i data-lucide="shopping-cart"
+                        style="margin-right: 8px; width: 18px;"></i> Shop Now</button>
+            </div>
+            <div class="hero-visual">
+                <img src="assets/hero-produce.svg" class="hero-main-img" alt="Organic Products">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Bar -->
+    <section class="features-bar">
+        <div class="container features-grid">
+            <div class="feature-item">
+                <i data-lucide="truck" class="feature-icon"></i>
+                <h4>Free Shipping</h4>
+                <p>Above $5 only.</p>
+            </div>
+            <div class="feature-item">
+                <i data-lucide="award" class="feature-icon"></i>
+                <h4>Certified Organic</h4>
+                <p>100% Guarantee.</p>
+            </div>
+            <div class="feature-item">
+                <i data-lucide="dollar-sign" class="feature-icon"></i>
+                <h4>Huge Savings</h4>
+                <p>At lowest price.</p>
+            </div>
+            <div class="feature-item">
+                <i data-lucide="refresh-cw" class="feature-icon"></i>
+                <h4>Easy Returns</h4>
+                <p>No questions asked.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop Section -->
+    <section class="shop-section" id="shop">
+        <div class="container">
+            <div class="shop-header">
+                <div style="font-size: 0.9rem; color: #666;">Home / Shop</div>
+                <h2 style="font-size: 2.5rem; color: #84CC16;" id="filter-title">Everything</h2>
+                <div>
+                    <!-- Sorting dropdown placeholder -->
+                    <select style="padding: 8px; border: 1px solid #ddd; background: transparent;">
+                        <option>Default Sorting</option>
+                        <option>Price: Low to High</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="shop-container">
+                <!-- Sidebar -->
+                <aside class="sidebar">
+
+                    <div class="filter-group">
+                        <h3>Categories:</h3>
+                        <ul class="category-list">
+                            <li><label><input type="checkbox"> Groceries (10)</label></li>
+                            <li><label><input type="checkbox"> Juices (5)</label></li>
+                        </ul>
+                    </div>
+                </aside>
+
+                <!-- Product Grid -->
+                <main class="product-grid" id="product-grid">
+                    <!-- Products injected by JS -->
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="info-section" id="about">
+        <div class="container info-container">
+            <div class="info-text">
+                <h2>About the Project</h2>
+                <p>The Organic Store Website is an e-commerce platform designed to connect users with a wide range of
+                    high-quality organic products. With the increasing demand for natural and eco-friendly products, our
+                    platform aims to simplify the process of discovering, exploring, and purchasing organic goods
+                    online. We leverage modern web technologies to deliver a fast, scalable, and user-friendly
+                    experience.</p>
+            </div>
+            <div class="info-image">
+                <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=600&q=80"
+                    alt="About Us">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="info-section light-bg" id="contact">
+        <div class="container info-container reverse">
+            <div class="info-text">
+                <h2>Contact Us</h2>
+                <div class="contact-card">
+                    <h3>Developer</h3>
+                    <p class="name">Shashvat Sharma</p>
+                    <p class="phone"><i data-lucide="phone" style="width: 16px;"></i> 6283706738</p>
+                    <p class="note">Feel free to reach out for any inquiries regarding the project.</p>
+                </div>
+            </div>
+            <div class="info-image">
+                <img src="https://images.unsplash.com/photo-1596524430615-b46475ddff6e?auto=format&fit=crop&w=600&q=80"
+                    alt="Contact Us">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <div class="logo-text" style="font-size: 1.2rem; margin-bottom: 1rem;">Organic <span>Store</span></div>
+                <p style="color: #666; font-size: 0.9rem; line-height: 1.6; max-width: 300px;">
+                    Connecting you with nature through premium organic produce.
+                </p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#shop">Shop</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Site Links</h4>
+                <ul>
+                    <li>Privacy Policy</li>
+                    <li>Shipping Details</li>
+                    <li>Offers & Coupons</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Download Our Mobile App</h4>
+                <p style="color: #666; font-size: 0.9rem; margin-bottom: 1rem;">
+                    Get exclusive offers on our app.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar Overlay -->
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="close-cart" id="close-cart"><i data-lucide="x"></i></button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- Items injected here -->
+            <p style="text-align:center; color:#999; margin-top:2rem;">Your cart is empty.</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total-price">$0.00</span>
+            </div>
+            <button class="btn btn-primary" style="width: 100%;">Checkout</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
