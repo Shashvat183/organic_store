@@ -66,12 +66,3 @@ Shashvat Sharma
 
 🔗 GitHub: https://github.com/Shashvat183
 
----
-
-## ✅ STEP 3: Save & close Notepad
-
----
-
-## ✅ STEP 4: Add README to Git
-```powershell
-git add README.md
